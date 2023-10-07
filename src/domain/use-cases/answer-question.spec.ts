@@ -10,5 +10,5 @@ test('create an answer', () => {
     content: 'Nova resposta'
   })
 
-  expect(answer.content).toEqual('Nova resposta')
+  expect(answer.content).toEqual('Nova resposta');
 })
