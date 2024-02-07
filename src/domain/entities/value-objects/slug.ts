@@ -7,15 +7,15 @@ export class Slug {
 
   /**
    * Recebe uma string e normaliza como um slug
-   * 
+   *
    * Exemplo: "Um título de exemplo" => "um-titulo-de-exemplo"
-   * 
-   * @param text 
-   * 
+   *
+   * @param text
+   *
    */
 
   static createFromText(text: string) {
-    //a função normalize padroniza a strign removendo os caracteres que não sejam aceitos dentro de uma convenção de caracteres
+    // a função normalize padroniza a strign removendo os caracteres que não sejam aceitos dentro de uma convenção de caracteres
     const slugText = text
       .normalize('NFKD')
       .toLowerCase()
@@ -28,5 +28,4 @@ export class Slug {
 
     return new Slug(slugText)
   }
-
 }
